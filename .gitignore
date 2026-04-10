@@ -3,9 +3,26 @@ __pycache__/
 *.pyo
 *.swp
 *.tmp
+*.log
+*.out
+*.bak
 .DS_Store
+.pytest_cache/
+
 intermediate/
 validation/
 
 # writing/search artifacts
 undermind/
+
+# generated export artifacts
+exports/adapt/
+exports/bundles/
+exports/**/manifest.yaml
+exports/**/reports/**
+
+# preserve intentional MVP reference fixtures
+!exports/**/final_medium_export.tsv
+!exports/**/gapseq_medium.csv
+!exports/**/exchange_bounds.tsv
+!exports/**/reports/row_lineage.tsv
