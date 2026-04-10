@@ -1,0 +1,11 @@
+compound_id	compound_name	evidence_source	evidence_note
+cpd00001	H2O	pkgs/gapseq_pipeline/tutorial_files/gf_medium.csv	present in local gapseq tutorial medium
+cpd00007	O2	results/magmap_311118_8gen/fastcore_runs_test/models/top25/AC_D02.xml	present as seed compound identifier in local gapseq-derived SBML
+cpd00009	Phosphate	pkgs/gapseq_pipeline/tutorial_files/gf_medium.csv	present in local gapseq tutorial medium
+cpd00027	D-Glucose	pkgs/gapseq_pipeline/tutorial_files/gf_medium.csv	present in local gapseq tutorial medium
+cpd00035	L-Alanine	results/magmap_311118_8gen/fastcore_runs_test/models/top25/AC_D02.xml	present as seed compound identifier in local gapseq-derived SBML
+cpd00067	H+	pkgs/gapseq_pipeline/tutorial_files/gf_medium.csv	present in local gapseq tutorial medium
+cpd00099	Cl-	pkgs/gapseq_pipeline/tutorial_files/gf_medium.csv	present in local gapseq tutorial medium
+cpd00158	D-Cellobiose	results/magmap_311118_8gen/fastcore_runs_test/models/top25/AC_D02.xml	present as seed compound identifier in local gapseq-derived SBML
+cpd00179	Maltose	results/magmap_311118_8gen/fastcore_runs_test/models/top25/AC_D02.xml	present as seed compound identifier in local gapseq-derived SBML
+cpd00971	Sodium	pkgs/gapseq_pipeline/tutorial_files/gf_medium.csv	present in local gapseq tutorial medium

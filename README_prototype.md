@@ -36,6 +36,16 @@ The prototype reads these explicit flat files:
 - `polymer_proxy_rules.tsv`
 - `chemical_form_rules.tsv`
 
+The prototype can also validate upstream-backed ids against a local extracted
+snapshot directory. By default it looks for:
+
+- `media_pipeline/upstream_snapshots/<namespace_snapshot>/snapshot_manifest.json`
+- `media_pipeline/upstream_snapshots/<namespace_snapshot>/compounds.tsv`
+
+You can override that location with:
+
+- `--upstream-reference-dir /path/to/extracted_snapshot`
+
 ## Canonical outputs
 
 - `final_medium_export.tsv`
@@ -104,6 +114,17 @@ python3 scripts/media_pipeline_cli.py media draft-create \
   --chemical-form-rules-table media_pipeline/examples/earlier_workbook_slice/chemical_form_rules.tsv \
   --namespace-snapshot gapseq_seed_like
 ```
+
+The same command now also writes:
+
+- `media_pipeline/exports/media/<family>/<version>/reports/upstream_reference_validation.tsv`
+- `media_pipeline/exports/media/<family>/<version>/reports/upstream_reference_validation.md`
+
+These classify checks as:
+
+- `valid_upstream`
+- `missing_upstream`
+- `local_only_expected`
 
 Inspect outputs:
 

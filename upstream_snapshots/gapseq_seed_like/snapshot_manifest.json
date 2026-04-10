@@ -1,0 +1,12 @@
+{
+  "snapshot_id": "gapseq_seed_like_extracted_2026-04-10",
+  "namespace": "gapseq_seed_like",
+  "description": "Minimal extracted local reference set for validating gapseq/SEED-like compound ids used by the MVP examples.",
+  "upstream_sources": [
+    "dat/nutrients.tsv"
+  ],
+  "extracted_from": [
+    "pkgs/gapseq_pipeline/tutorial_files/gf_medium.csv",
+    "results/magmap_311118_8gen/fastcore_runs_test/models/top25/AC_D02.xml"
+  ]
+}
