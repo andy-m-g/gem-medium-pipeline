@@ -1,0 +1,2 @@
+mapping_row_id	source_row_id	component_raw	component_normalized	target_namespace	target_id	target_name	mapping_status	mapping_kind	split_group	stoich_coeff	evidence	confidence	decision	decision_note	reviewer	decision_date
+map1	row1	Glucose	glucose	seed	cpd00027	D-Glucose	approved	direct		1	manual	high	approve		andy	2026-04-09

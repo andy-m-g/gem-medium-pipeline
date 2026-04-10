@@ -1,0 +1,8 @@
+mapping_id	curated_compound_name	target_namespace	target_id	target_name	mapping_status	alignment_class	upstream_source	upstream_ref	evidence_note	decision_note
+map_alanine	Alanine	gapseq_seed_like	cpd00035	L-Alanine	approved	directly_aligned_with_gapseq_upstream	dat/nutrients.tsv	cpd00035	upstream alanine compound	
+map_cellulose	Cellulose	gapseq_seed_like	cpd_poly_cellulose	Cellulose	approved	local_proxy_or_override	workbook_slice	local_cellulose	cellulose retained upstream and proxied later for viable export	polymer proxy deferred to viable export stage
+map_nacl	Sodium chloride	gapseq_seed_like	cpd_salt_nacl	Sodium chloride	approved	inferred_from_gapseq_convention	workbook_slice	local_nacl_salt	salt retained upstream and split later for viable export	salt split deferred to viable export stage
+map_lactic	Lactic acid	gapseq_seed_like	cpd_lactic_acid	Lactic acid	approved	inferred_from_gapseq_convention	dat/nutrients.tsv	cpd_lactic_acid	model-facing export uses lactate form rather than neutral acid	chemical-form change deferred to viable export stage
+map_o2	O2	gapseq_seed_like	cpd00007	O2	approved	directly_aligned_with_gapseq_upstream	dat/nutrients.tsv	cpd00007	upstream oxygen compound	
+map_h2o	H2O	gapseq_seed_like	cpd00001	H2O	approved	directly_aligned_with_gapseq_upstream	dat/nutrients.tsv	cpd00001	upstream water compound	
+map_h	H+	gapseq_seed_like	cpd00067	H+	approved	directly_aligned_with_gapseq_upstream	dat/nutrients.tsv	cpd00067	upstream proton compound	

@@ -1,0 +1,15 @@
+{
+  "schema_id": "manifest.bundle.v1",
+  "object_type": "bundle_release",
+  "bundle_id": "replace_me",
+  "created_at": null,
+  "created_by": "replace_me",
+  "git_commit": "0000000",
+  "medium_version": "replace_me",
+  "adapt_version": null,
+  "namespace_snapshot": "replace_me",
+  "input_files": [],
+  "input_hashes": {},
+  "reports": [],
+  "provenance_bundle": "replace_me"
+}

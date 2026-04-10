@@ -1,0 +1,23 @@
+{
+  "$id": "tsv.source_recipe",
+  "type": "table",
+  "delimiter": "\t",
+  "required_columns": [
+    "source_row_id",
+    "medium_family",
+    "source_version",
+    "ingredient_name",
+    "quantity",
+    "unit",
+    "source_ref",
+    "supplier",
+    "evidence_note",
+    "decision_note"
+  ],
+  "constraints": {
+    "unique": [["source_row_id"]],
+    "enum": {
+      "unit": ["g/L", "mg/L", "ug/L"]
+    }
+  }
+}

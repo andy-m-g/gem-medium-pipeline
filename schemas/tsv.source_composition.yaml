@@ -1,0 +1,22 @@
+{
+  "$id": "tsv.source_composition",
+  "type": "table",
+  "delimiter": "\t",
+  "required_columns": [
+    "source_row_id",
+    "source_medium_id",
+    "source_name",
+    "component_raw",
+    "amount_raw",
+    "unit_raw",
+    "basis",
+    "source_ref",
+    "curator"
+  ],
+  "constraints": {
+    "unique": [["source_row_id"]],
+    "enum": {
+      "basis": ["per_l", "per_ml", "per_serving", "stock_solution", "unknown"]
+    }
+  }
+}

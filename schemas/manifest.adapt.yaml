@@ -1,0 +1,25 @@
+{
+  "$id": "manifest.adapt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_id",
+    "object_type",
+    "family_id",
+    "version_id",
+    "state",
+    "created_at",
+    "created_by",
+    "git_commit",
+    "namespace_snapshot",
+    "compatible_medium_versions",
+    "input_files",
+    "input_hashes",
+    "reports"
+  ],
+  "properties": {
+    "schema_id": {"const": "manifest.adapt.v1"},
+    "object_type": {"const": "adapt_release"},
+    "state": {"enum": ["draft", "candidate", "released", "deprecated", "superseded"]}
+  }
+}

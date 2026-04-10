@@ -1,0 +1,4 @@
+source_row_id	medium_family	source_version	ingredient_name	quantity	unit	source_ref	supplier	evidence_note	decision_note
+src_yeast	lbproto	earlier_workbook_slice	Yeast Extract	5	g/L	pone.0236890.s001.ods	BD	reduced prototype row from earlier workbook	
+src_nacl	lbproto	earlier_workbook_slice	NaCl	10	g/L	pone.0236890.s001.ods	manual	reduced prototype row from earlier workbook	
+src_lactic	lbproto	earlier_workbook_slice	Lactic acid	1.5	g/L	workbook_slice	manual	added narrow chemical-form example for viable export MVP	

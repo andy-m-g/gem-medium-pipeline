@@ -1,0 +1,25 @@
+{
+  "$id": "manifest.medium",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_id",
+    "object_type",
+    "family_id",
+    "version_id",
+    "state",
+    "created_at",
+    "created_by",
+    "git_commit",
+    "namespace_snapshot",
+    "source_version",
+    "input_files",
+    "input_hashes",
+    "reports"
+  ],
+  "properties": {
+    "schema_id": {"const": "manifest.medium.v1"},
+    "object_type": {"const": "medium_release"},
+    "state": {"enum": ["draft", "candidate", "released", "deprecated", "superseded"]}
+  }
+}

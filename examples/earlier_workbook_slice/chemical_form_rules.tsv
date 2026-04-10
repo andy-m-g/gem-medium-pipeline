@@ -1,0 +1,2 @@
+transformation_rule_id	viable_rule_id	output_compound_id	output_compound_name	multiplier	alignment_class	upstream_source	upstream_ref	evidence_note	decision_note
+chem_lactic_lactate	via_lactic	cpd_l_lactate	L-Lactate	1	inferred_from_gapseq_convention	dat/nutrients.tsv	cpd_l_lactate	lactic acid is exported in lactate form for model compatibility	explicit viable chemical-form change

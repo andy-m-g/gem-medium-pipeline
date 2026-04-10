@@ -1,0 +1,34 @@
+{
+  "$id": "tsv.viable_compound_rules",
+  "type": "table",
+  "delimiter": "\t",
+  "required_columns": [
+    "viable_rule_id",
+    "mapping_id",
+    "rule_class",
+    "rule_status",
+    "alignment_class",
+    "upstream_source",
+    "upstream_ref",
+    "evidence_note",
+    "decision_note"
+  ],
+  "constraints": {
+    "unique": [["viable_rule_id"], ["mapping_id"]],
+    "enum": {
+      "rule_class": [
+        "direct_export",
+        "salt_split_member",
+        "polymer_proxy",
+        "chemical_form_change"
+      ],
+      "rule_status": ["approved", "proposed", "unresolved"],
+      "alignment_class": [
+        "directly_aligned_with_gapseq_upstream",
+        "inferred_from_gapseq_convention",
+        "local_proxy_or_override",
+        "unclear_needs_more_evidence"
+      ]
+    }
+  }
+}

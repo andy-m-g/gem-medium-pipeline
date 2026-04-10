@@ -1,0 +1,24 @@
+{
+  "$id": "tsv.decision_log",
+  "type": "table",
+  "delimiter": "\t",
+  "required_columns": [
+    "decision_id",
+    "date",
+    "entity_type",
+    "entity_key",
+    "stage",
+    "decision",
+    "reason",
+    "reviewer",
+    "status"
+  ],
+  "constraints": {
+    "unique": [["decision_id"]],
+    "enum": {
+      "entity_type": ["source_row", "mapping_row", "policy_rule", "export_row", "reaction_addition", "exchange_addition", "namespace_bridge"],
+      "stage": ["source_capture", "mapping_review", "transform_policy", "export", "validation", "adapt_curation", "namespace_migration"],
+      "status": ["active", "withdrawn", "superseded"]
+    }
+  }
+}

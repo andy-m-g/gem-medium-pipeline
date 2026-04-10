@@ -1,0 +1,30 @@
+{
+  "$id": "tsv.component_mapping",
+  "type": "table",
+  "delimiter": "\t",
+  "required_columns": [
+    "mapping_id",
+    "curated_compound_name",
+    "target_namespace",
+    "target_id",
+    "target_name",
+    "mapping_status",
+    "alignment_class",
+    "upstream_source",
+    "upstream_ref",
+    "evidence_note",
+    "decision_note"
+  ],
+  "constraints": {
+    "unique": [["mapping_id"]],
+    "enum": {
+      "mapping_status": ["approved", "proposed", "unresolved"],
+      "alignment_class": [
+        "directly_aligned_with_gapseq_upstream",
+        "inferred_from_gapseq_convention",
+        "local_proxy_or_override",
+        "unclear_needs_more_evidence"
+      ]
+    }
+  }
+}

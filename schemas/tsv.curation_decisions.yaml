@@ -1,0 +1,34 @@
+{
+  "$id": "tsv.curation_decisions",
+  "type": "table",
+  "delimiter": "\t",
+  "allow_empty": true,
+  "required_columns": [
+    "decision_id",
+    "stage_name",
+    "decision_type",
+    "from_value",
+    "to_value",
+    "value_mmol_per_l",
+    "alignment_class",
+    "upstream_source",
+    "upstream_ref",
+    "evidence_note",
+    "decision_note",
+    "reviewer",
+    "decision_date"
+  ],
+  "constraints": {
+    "unique": [["decision_id"]],
+    "enum": {
+      "stage_name": ["curation_review"],
+      "decision_type": ["rename", "add_background_species", "omit"],
+      "alignment_class": [
+        "directly_aligned_with_gapseq_upstream",
+        "inferred_from_gapseq_convention",
+        "local_proxy_or_override",
+        "unclear_needs_more_evidence"
+      ]
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "schema_id": "manifest.medium.v1",
+  "object_type": "medium_release",
+  "family_id": "replace_me",
+  "version_id": "replace_me",
+  "state": "draft",
+  "created_at": null,
+  "created_by": "replace_me",
+  "git_commit": "0000000",
+  "parent_version": null,
+  "source_version": "replace_me",
+  "mapping_version": "replace_me",
+  "policy_version": "policy_v01",
+  "namespace_snapshot": "unset",
+  "migration_of": null,
+  "release_note": null,
+  "status_flags": {
+    "unresolved_mapping_count": 0,
+    "unresolved_complex_mixture_count": 0,
+    "validation_passed": false,
+    "release_blockers_present": true
+  },
+  "input_files": [],
+  "input_hashes": {},
+  "outputs": [],
+  "reports": [],
+  "decisions_log": null,
+  "validations": [],
+  "supersedes": null,
+  "superseded_by": null
+}

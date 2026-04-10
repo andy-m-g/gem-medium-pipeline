@@ -1,0 +1,21 @@
+{
+  "$id": "tsv.namespace_bridge",
+  "type": "table",
+  "delimiter": "\t",
+  "required_columns": [
+    "bridge_id",
+    "from_namespace",
+    "from_id",
+    "to_namespace",
+    "mapping_class",
+    "decision",
+    "reviewer"
+  ],
+  "constraints": {
+    "unique": [["bridge_id"]],
+    "enum": {
+      "mapping_class": ["one_to_one", "one_to_many", "many_to_one", "deprecated_no_replacement", "unresolved"],
+      "decision": ["approve", "reject", "unresolved"]
+    }
+  }
+}

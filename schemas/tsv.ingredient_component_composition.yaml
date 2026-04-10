@@ -1,0 +1,40 @@
+{
+  "$id": "tsv.ingredient_component_composition",
+  "type": "table",
+  "delimiter": "\t",
+  "required_columns": [
+    "component_row_id",
+    "source_row_id",
+    "ingredient_name",
+    "component_name",
+    "component_quantity",
+    "component_unit",
+    "mw_value",
+    "mw_basis",
+    "alignment_class",
+    "upstream_source",
+    "upstream_ref",
+    "evidence_note",
+    "decision_note"
+  ],
+  "constraints": {
+    "unique": [["component_row_id"]],
+    "enum": {
+      "component_unit": [
+        "inherit_g_per_l",
+        "%",
+        "ug/g",
+        "ug/L",
+        "mg/L",
+        "mg/100g",
+        "ug/100g"
+      ],
+      "alignment_class": [
+        "directly_aligned_with_gapseq_upstream",
+        "inferred_from_gapseq_convention",
+        "local_proxy_or_override",
+        "unclear_needs_more_evidence"
+      ]
+    }
+  }
+}

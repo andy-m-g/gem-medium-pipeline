@@ -1,0 +1,2 @@
+source_row_id	medium_family	source_version	ingredient_name	quantity	unit	source_ref	supplier	evidence_note	decision_note
+src_example	example	example_v01	Example ingredient	1	g/L	manual	entry		

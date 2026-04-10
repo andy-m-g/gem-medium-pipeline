@@ -1,0 +1,29 @@
+{
+  "$id": "tsv.chemical_form_rules",
+  "type": "table",
+  "delimiter": "\t",
+  "allow_empty": true,
+  "required_columns": [
+    "transformation_rule_id",
+    "viable_rule_id",
+    "output_compound_id",
+    "output_compound_name",
+    "multiplier",
+    "alignment_class",
+    "upstream_source",
+    "upstream_ref",
+    "evidence_note",
+    "decision_note"
+  ],
+  "constraints": {
+    "unique": [["transformation_rule_id"]],
+    "enum": {
+      "alignment_class": [
+        "directly_aligned_with_gapseq_upstream",
+        "inferred_from_gapseq_convention",
+        "local_proxy_or_override",
+        "unclear_needs_more_evidence"
+      ]
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "$id": "tsv.reaction_additions",
+  "type": "table",
+  "delimiter": "\t",
+  "required_columns": [
+    "addition_id",
+    "model_scope",
+    "target_namespace",
+    "reaction_id",
+    "addition_reason",
+    "evidence",
+    "curator",
+    "status"
+  ],
+  "constraints": {
+    "unique": [["addition_id"]],
+    "enum": {
+      "status": ["proposed", "approved", "rejected", "unresolved"]
+    }
+  }
+}

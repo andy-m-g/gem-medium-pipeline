@@ -1,0 +1,19 @@
+{
+  "$id": "manifest.bundle",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_id",
+    "object_type",
+    "bundle_id",
+    "created_at",
+    "created_by",
+    "git_commit",
+    "medium_version",
+    "reports"
+  ],
+  "properties": {
+    "schema_id": {"const": "manifest.bundle.v1"},
+    "object_type": {"const": "bundle_release"}
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "schema_id": "manifest.adapt.v1",
+  "object_type": "adapt_release",
+  "family_id": "replace_me",
+  "version_id": "replace_me",
+  "state": "released",
+  "created_at": null,
+  "created_by": "replace_me",
+  "git_commit": "0000000",
+  "parent_version": null,
+  "namespace_snapshot": "replace_me",
+  "compatible_medium_versions": [],
+  "compiled_commands": {
+    "tsv": null,
+    "txt": null
+  },
+  "status_flags": {
+    "unresolved_identifier_count": 0,
+    "validation_passed": true,
+    "release_blockers_present": false
+  },
+  "input_files": [],
+  "input_hashes": {},
+  "outputs": [],
+  "reports": [],
+  "decisions_log": null,
+  "validations": [],
+  "release_note": "replace_me",
+  "supersedes": null,
+  "superseded_by": null
+}

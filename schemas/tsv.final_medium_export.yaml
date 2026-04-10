@@ -1,0 +1,18 @@
+{
+  "$id": "tsv.final_medium_export",
+  "type": "table",
+  "delimiter": "\t",
+  "required_columns": [
+    "export_row_id",
+    "compound_id",
+    "compound_name",
+    "max_flux",
+    "flux_unit",
+    "derived_from_stage",
+    "alignment_class",
+    "upstream_source",
+    "upstream_ref",
+    "evidence_note",
+    "decision_note"
+  ]
+}

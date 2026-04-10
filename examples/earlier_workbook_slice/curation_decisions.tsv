@@ -1,0 +1,4 @@
+decision_id	stage_name	decision_type	from_value	to_value	value_mmol_per_l	alignment_class	upstream_source	upstream_ref	evidence_note	decision_note	reviewer	decision_date
+dec_o2	curation_review	add_background_species		O2	0	directly_aligned_with_gapseq_upstream	dat/nutrients.tsv	cpd00007	background species inserted explicitly for export parity	inserted as explicit background species	prototype_curator	2026-04-10
+dec_h2o	curation_review	add_background_species		H2O	1000	directly_aligned_with_gapseq_upstream	dat/nutrients.tsv	cpd00001	background species inserted explicitly for export parity	inserted as explicit background species	prototype_curator	2026-04-10
+dec_h	curation_review	add_background_species		H+	0.0001	directly_aligned_with_gapseq_upstream	dat/nutrients.tsv	cpd00067	background species inserted explicitly from pH assumption	inserted from simple pH assumption	prototype_curator	2026-04-10

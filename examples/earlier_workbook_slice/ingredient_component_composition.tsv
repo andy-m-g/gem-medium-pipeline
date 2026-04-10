@@ -1,0 +1,5 @@
+component_row_id	source_row_id	ingredient_name	component_name	component_quantity	component_unit	mw_value	mw_basis	alignment_class	upstream_source	upstream_ref	evidence_note	decision_note
+cmp_yeast_ala	src_yeast	Yeast Extract	Alanine	5.6	%	89.09	worksheet mw	local_proxy_or_override			workbook-derived decomposition row
+cmp_yeast_cell	src_yeast	Yeast Extract	Cellulose	0.2	%	162.14	worksheet-style proxy mw	local_proxy_or_override			reduced polymer example for viable export proxy stage
+cmp_nacl_salt	src_nacl	NaCl	Sodium chloride	1	inherit_g_per_l	58.44	salt formula mass	inferred_from_gapseq_convention			NaCl retained as a mapped salt and split later in viable export
+cmp_lactic	src_lactic	Lactic acid	Lactic acid	1	inherit_g_per_l	90.08	formula mass	inferred_from_gapseq_convention			lactic acid retained upstream and converted to lactate in viable export

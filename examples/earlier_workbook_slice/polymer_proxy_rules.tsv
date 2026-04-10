@@ -1,0 +1,2 @@
+transformation_rule_id	viable_rule_id	output_compound_id	output_compound_name	multiplier	alignment_class	upstream_source	upstream_ref	evidence_note	decision_note
+poly_cellulose_cellobiose	via_cellulose	cpd00158	D-Cellobiose	0.5	local_proxy_or_override	dat/nutrients.tsv	cpd00158	cellulose proxy represented as one cellobiose per two anhydroglucose units	explicit viable polymer proxy

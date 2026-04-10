@@ -1,0 +1,63 @@
+{
+  "created_at": "2026-04-10T09:31:25+00:00",
+  "created_by": "unknown",
+  "decisions_log": "/home/andy/Documents/bioreactor/media_pipeline/decisions/decision_log.tsv",
+  "family_id": "lbproto",
+  "git_commit": "0000000",
+  "input_files": [
+    "/home/andy/Documents/bioreactor/media_pipeline/examples/earlier_workbook_slice/source_recipe.tsv",
+    "/home/andy/Documents/bioreactor/media_pipeline/examples/earlier_workbook_slice/ingredient_component_composition.tsv",
+    "/home/andy/Documents/bioreactor/media_pipeline/examples/earlier_workbook_slice/curation_decisions.tsv",
+    "/home/andy/Documents/bioreactor/media_pipeline/examples/earlier_workbook_slice/component_mapping.tsv",
+    "/home/andy/Documents/bioreactor/media_pipeline/examples/earlier_workbook_slice/viable_compound_rules.tsv",
+    "/home/andy/Documents/bioreactor/media_pipeline/examples/earlier_workbook_slice/salt_split_rules.tsv",
+    "/home/andy/Documents/bioreactor/media_pipeline/examples/earlier_workbook_slice/polymer_proxy_rules.tsv",
+    "/home/andy/Documents/bioreactor/media_pipeline/examples/earlier_workbook_slice/chemical_form_rules.tsv"
+  ],
+  "input_hashes": {
+    "/home/andy/Documents/bioreactor/media_pipeline/examples/earlier_workbook_slice/chemical_form_rules.tsv": "sha256:86ccfdffd712e092249ee108ebb37f82e714e090c559c8b8f671db128c73c08e",
+    "/home/andy/Documents/bioreactor/media_pipeline/examples/earlier_workbook_slice/component_mapping.tsv": "sha256:db14a0816e879721e6b5cc84a662680ea7e76e7add130be25b32c08a074c7089",
+    "/home/andy/Documents/bioreactor/media_pipeline/examples/earlier_workbook_slice/curation_decisions.tsv": "sha256:4621488c04216cb997e6cf1a292d6a5911132a6dcb42812df9a8424bbf046bf0",
+    "/home/andy/Documents/bioreactor/media_pipeline/examples/earlier_workbook_slice/ingredient_component_composition.tsv": "sha256:99db6ba39c99027396961ec2c7fc31bf34eda06b0210b4c61e7194e4fe7776cb",
+    "/home/andy/Documents/bioreactor/media_pipeline/examples/earlier_workbook_slice/polymer_proxy_rules.tsv": "sha256:316ef58b2ba5d3cefe6b9a78f3b8b5b9eccdc009c98e277f6b4a4960ae3a36f9",
+    "/home/andy/Documents/bioreactor/media_pipeline/examples/earlier_workbook_slice/salt_split_rules.tsv": "sha256:d39e338295266b4ffa51bd827c6e1d81f20469df6dc20e3bc38dd9573f5bf818",
+    "/home/andy/Documents/bioreactor/media_pipeline/examples/earlier_workbook_slice/source_recipe.tsv": "sha256:fbb13d5623d1dac628659f2ccdca1e7148051688381b8747add8ca1f990f607a",
+    "/home/andy/Documents/bioreactor/media_pipeline/examples/earlier_workbook_slice/viable_compound_rules.tsv": "sha256:1c8bed5159e384c14fa85a833cc019f79028eb9a6a52df4f27f1d167dc926a98"
+  },
+  "mapping_version": "lbproto_draft_01",
+  "migration_of": null,
+  "namespace_snapshot": "gapseq_seed_like",
+  "object_type": "medium_release",
+  "outputs": [
+    "/home/andy/Documents/bioreactor/media_pipeline/intermediate/lbproto/lbproto_draft_01/normalized_components.tsv",
+    "/home/andy/Documents/bioreactor/media_pipeline/intermediate/lbproto/lbproto_draft_01/aggregated_compounds.tsv",
+    "/home/andy/Documents/bioreactor/media_pipeline/intermediate/lbproto/lbproto_draft_01/curated_compounds.tsv",
+    "/home/andy/Documents/bioreactor/media_pipeline/intermediate/lbproto/lbproto_draft_01/mapped_compounds.tsv",
+    "/home/andy/Documents/bioreactor/media_pipeline/intermediate/lbproto/lbproto_draft_01/viable_compounds.tsv",
+    "/home/andy/Documents/bioreactor/media_pipeline/exports/media/lbproto/lbproto_draft_01/final_medium_export.tsv",
+    "/home/andy/Documents/bioreactor/media_pipeline/exports/media/lbproto/lbproto_draft_01/gapseq_medium.csv"
+  ],
+  "parent_version": null,
+  "policy_version": "prototype_v1",
+  "release_note": null,
+  "reports": [
+    "/home/andy/Documents/bioreactor/media_pipeline/exports/media/lbproto/lbproto_draft_01/reports/draft_summary.md",
+    "/home/andy/Documents/bioreactor/media_pipeline/exports/media/lbproto/lbproto_draft_01/reports/unmapped_components.tsv",
+    "/home/andy/Documents/bioreactor/media_pipeline/exports/media/lbproto/lbproto_draft_01/reports/row_lineage.tsv",
+    "/home/andy/Documents/bioreactor/media_pipeline/validation/media/lbproto/lbproto_draft_01/validation_report.md"
+  ],
+  "schema_id": "manifest.medium.v1",
+  "source_version": "lbproto_draft_01",
+  "state": "draft",
+  "status_flags": {
+    "release_blockers_present": false,
+    "unresolved_complex_mixture_count": 0,
+    "unresolved_mapping_count": 0,
+    "unresolved_viable_transformation_count": 0,
+    "validation_passed": true
+  },
+  "superseded_by": null,
+  "supersedes": null,
+  "validations": [],
+  "version_id": "lbproto_draft_01"
+}

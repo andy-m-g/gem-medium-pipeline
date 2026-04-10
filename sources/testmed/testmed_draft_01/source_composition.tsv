@@ -1,0 +1,2 @@
+source_row_id	source_medium_id	source_name	component_raw	amount_raw	unit_raw	basis	per_volume_value	per_volume_unit	lot_or_vendor	source_ref	page_or_table	comment	curator
+row1	testmed	paper	Glucose	1	g/L	per_l	1.0	mmol/L		ref1	Table1		andy

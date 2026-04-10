@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.pyo
+*.swp
+*.tmp
+.DS_Store
+intermediate/
+validation/

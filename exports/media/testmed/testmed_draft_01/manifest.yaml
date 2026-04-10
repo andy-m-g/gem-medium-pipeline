@@ -1,0 +1,45 @@
+{
+  "created_at": "2026-04-09T13:54:12+00:00",
+  "created_by": "andy",
+  "decisions_log": "/home/andy/Documents/bioreactor/media_pipeline/decisions/decision_log.tsv",
+  "family_id": "testmed",
+  "git_commit": "abcdef1",
+  "input_files": [
+    "/home/andy/Documents/bioreactor/media_pipeline/sources/testmed/testmed_draft_01/source_composition.tsv",
+    "/home/andy/Documents/bioreactor/media_pipeline/mapping/media/testmed/testmed_draft_01/component_mapping.tsv"
+  ],
+  "input_hashes": {
+    "/home/andy/Documents/bioreactor/media_pipeline/mapping/media/testmed/testmed_draft_01/component_mapping.tsv": "sha256:2766cab6653e915851811610e01d9c4d6d63edd17f744ad32a985801e46d910a",
+    "/home/andy/Documents/bioreactor/media_pipeline/sources/testmed/testmed_draft_01/source_composition.tsv": "sha256:04f2fbbb49648ffffbf8ef313bf81242db77629a325f092c95cba24d35deb3c4"
+  },
+  "mapping_version": "testmed_draft_01",
+  "migration_of": null,
+  "namespace_snapshot": "seed_2026_01",
+  "object_type": "medium_release",
+  "outputs": [
+    "/home/andy/Documents/bioreactor/media_pipeline/exports/media/testmed/testmed_draft_01/gapseq_medium.csv",
+    "/home/andy/Documents/bioreactor/media_pipeline/exports/media/testmed/testmed_draft_01/exchange_bounds.tsv"
+  ],
+  "parent_version": null,
+  "policy_version": "policy_v01",
+  "release_note": null,
+  "reports": [
+    "/home/andy/Documents/bioreactor/media_pipeline/exports/media/testmed/testmed_draft_01/reports/row_lineage.tsv",
+    "/home/andy/Documents/bioreactor/media_pipeline/exports/media/testmed/testmed_draft_01/reports/export_summary.md"
+  ],
+  "schema_id": "manifest.medium.v1",
+  "source_version": "testmed_draft_01",
+  "state": "candidate",
+  "status_flags": {
+    "release_blockers_present": false,
+    "unresolved_complex_mixture_count": 0,
+    "unresolved_mapping_count": 0,
+    "validation_passed": true
+  },
+  "superseded_by": null,
+  "supersedes": null,
+  "validations": [
+    "/home/andy/Documents/bioreactor/media_pipeline/validation/media/testmed/testmed_draft_01/validation_report.md"
+  ],
+  "version_id": "testmed_draft_01"
+}
