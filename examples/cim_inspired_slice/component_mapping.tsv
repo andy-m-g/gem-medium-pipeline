@@ -1,0 +1,8 @@
+mapping_id	curated_compound_name	target_namespace	target_id	target_name	mapping_status	alignment_class	upstream_source	upstream_ref	evidence_note	decision_note
+map_glucose	D-Glucose	gapseq_seed_like	cpd00027	D-Glucose	approved	directly_aligned_with_gapseq_upstream	dat/nutrients.tsv	cpd00027	upstream glucose compound	direct export remains explicit at viable stage
+map_na2hpo4	Disodium phosphate	gapseq_seed_like	cpd_salt_na2hpo4	Disodium phosphate	approved	inferred_from_gapseq_convention	workbook_slice	local_na2hpo4_salt	salt retained upstream and split later into viable ions	salt split deferred to viable export stage
+map_starch	Starch	gapseq_seed_like	cpd_poly_starch	Starch	approved	local_proxy_or_override	workbook_slice	local_starch_polymer	polymer retained upstream and proxied later into a smaller viable export	polymer proxy deferred to viable export stage
+map_citric	Citric acid	gapseq_seed_like	cpd_citric_acid	Citric acid	approved	inferred_from_gapseq_convention	workbook_slice	local_citric_acid	model-facing export uses citrate rather than neutral citric acid	chemical-form change deferred to viable export stage
+map_o2	O2	gapseq_seed_like	cpd00007	O2	approved	directly_aligned_with_gapseq_upstream	dat/nutrients.tsv	cpd00007	upstream oxygen compound	
+map_h2o	H2O	gapseq_seed_like	cpd00001	H2O	approved	directly_aligned_with_gapseq_upstream	dat/nutrients.tsv	cpd00001	upstream water compound	
+map_h	H+	gapseq_seed_like	cpd00067	H+	approved	directly_aligned_with_gapseq_upstream	dat/nutrients.tsv	cpd00067	upstream proton compound	

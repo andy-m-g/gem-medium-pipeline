@@ -1,0 +1,8 @@
+viable_rule_id	mapping_id	rule_class	rule_status	alignment_class	upstream_source	upstream_ref	evidence_note	decision_note
+via_glucose	map_glucose	direct_export	approved	directly_aligned_with_gapseq_upstream	dat/nutrients.tsv	cpd00027	direct export retained after namespace mapping	no viable transformation beyond explicit direct export
+via_na2hpo4	map_na2hpo4	salt_split_member	approved	inferred_from_gapseq_convention	workbook_slice	local_na2hpo4_salt	salt must be split into viable member exports with stoichiometric multipliers	salt split expressed explicitly in viable export stage
+via_starch	map_starch	polymer_proxy	approved	local_proxy_or_override	workbook_slice	local_starch_polymer	polymer proxy required because the model export uses a smaller viable proxy	polymer proxy expressed explicitly in viable export stage
+via_citric	map_citric	chemical_form_change	approved	inferred_from_gapseq_convention	workbook_slice	local_citric_acid	model export uses citrate rather than neutral citric acid	chemical form change expressed explicitly in viable export stage
+via_o2	map_o2	direct_export	approved	directly_aligned_with_gapseq_upstream	dat/nutrients.tsv	cpd00007	background species passes through directly	no viable transformation beyond explicit direct export
+via_h2o	map_h2o	direct_export	approved	directly_aligned_with_gapseq_upstream	dat/nutrients.tsv	cpd00001	background species passes through directly	no viable transformation beyond explicit direct export
+via_h	map_h	direct_export	approved	directly_aligned_with_gapseq_upstream	dat/nutrients.tsv	cpd00067	background species passes through directly	no viable transformation beyond explicit direct export

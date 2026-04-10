@@ -1,0 +1,5 @@
+source_row_id	medium_family	source_version	ingredient_name	quantity	unit	source_ref	supplier	evidence_note	decision_note
+src_glucose	cimproto	cim_inspired_slice	D-Glucose	2	g/L	cim_slice_sheet	curator	explicit direct carbon source for MVP sufficiency test	
+src_na2hpo4	cimproto	cim_inspired_slice	Disodium phosphate	1	g/L	cim_slice_sheet	curator	explicit salt example for stoichiometric split test	
+src_starch	cimproto	cim_inspired_slice	Starch	0.5	g/L	cim_slice_sheet	curator	explicit polymer proxy example for viable export test	
+src_citric	cimproto	cim_inspired_slice	Citric acid	0.25	g/L	cim_slice_sheet	curator	explicit chemical-form example for viable export test	

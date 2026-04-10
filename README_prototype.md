@@ -68,6 +68,18 @@ It demonstrates:
 - one `polymer_proxy`
 - one `chemical_form_change`
 
+A second stress-test fixture lives in:
+
+- `media_pipeline/examples/cim_inspired_slice/`
+
+It exercises the same MVP stages with a small CIM-inspired slice and includes:
+
+- one `direct_export`
+- one stoichiometric `salt_split_member`
+- one `polymer_proxy`
+- one `chemical_form_change`
+- explicit background-species insertion
+
 ## Run end to end
 
 Initialize a prototype scaffold:

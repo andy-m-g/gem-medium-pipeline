@@ -1,0 +1,2 @@
+transformation_rule_id	viable_rule_id	output_compound_id	output_compound_name	multiplier	alignment_class	upstream_source	upstream_ref	evidence_note	decision_note
+chem_citric_citrate	via_citric	cpd_citrate	Citrate	1	inferred_from_gapseq_convention	workbook_slice	local_citrate_model_form	citric acid is exported in citrate form for model compatibility	explicit viable chemical-form change

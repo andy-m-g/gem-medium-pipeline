@@ -1,0 +1,2 @@
+decision_id	stage_name	decision_type	from_value	to_value	value_mmol_per_l	alignment_class	upstream_source	upstream_ref	evidence_note	decision_note	reviewer	decision_date
+dec_example	curation_review	rename	Example compound	Example compound curated		local_proxy_or_override					reviewer	2026-04-10

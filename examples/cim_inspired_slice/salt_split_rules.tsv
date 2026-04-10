@@ -1,0 +1,3 @@
+transformation_rule_id	viable_rule_id	output_compound_id	output_compound_name	multiplier	alignment_class	upstream_source	upstream_ref	evidence_note	decision_note
+salt_na2hpo4_na	via_na2hpo4	cpd00971	Sodium	2	inferred_from_gapseq_convention	dat/nutrients.tsv	cpd00971	disodium phosphate yields two sodium-equivalents per mole	explicit viable sodium export member
+salt_na2hpo4_pi	via_na2hpo4	cpd00009	Phosphate	1	inferred_from_gapseq_convention	dat/nutrients.tsv	cpd00009	disodium phosphate yields one phosphate-equivalent per mole	explicit viable phosphate export member

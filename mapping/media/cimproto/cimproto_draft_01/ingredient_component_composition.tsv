@@ -1,0 +1,2 @@
+component_row_id	source_row_id	ingredient_name	component_name	component_quantity	component_unit	mw_value	mw_basis	alignment_class	upstream_source	upstream_ref	evidence_note	decision_note
+cmp_example	src_example	Example ingredient	Example compound	100	%	100	reviewed	local_proxy_or_override				
