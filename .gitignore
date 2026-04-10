@@ -6,3 +6,6 @@ __pycache__/
 .DS_Store
 intermediate/
 validation/
+
+# writing/search artifacts
+undermind/
