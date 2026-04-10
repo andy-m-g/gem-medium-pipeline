@@ -29,4 +29,9 @@ The viable transformation example includes:
 - `polymer_proxy` for `Cellulose -> D-Cellobiose`
 - `chemical_form_change` for `Lactic acid -> L-Lactate`
 
+With the current extracted `gapseq_seed_like` snapshot, the retained NaCl and
+lactic/lactate intermediate rows in this fixture are local placeholders, while
+the final viable outputs sodium, chloride, cellobiose, alanine, O2, H2O, and H+
+resolve against the upstream snapshot.
+
 Use the repo-level prototype README for exact commands.

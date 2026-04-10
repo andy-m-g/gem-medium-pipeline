@@ -1,2 +1,2 @@
 transformation_rule_id	viable_rule_id	output_compound_id	output_compound_name	multiplier	alignment_class	upstream_source	upstream_ref	evidence_note	decision_note
-chem_lactic_lactate	via_lactic	cpd_l_lactate	L-Lactate	1	inferred_from_gapseq_convention	dat/nutrients.tsv	cpd_l_lactate	lactic acid is exported in lactate form for model compatibility	explicit viable chemical-form change
+chem_lactic_lactate	via_lactic	cpd_l_lactate	L-Lactate	1	local_proxy_or_override	workbook_slice	local_l_lactate_model_form	lactate is emitted as a local model-facing form because no upstream lactate id exists in this snapshot	explicit viable chemical-form change
