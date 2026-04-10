@@ -1,3 +1,3 @@
 # Release Readiness
 
-No blockers detected.
+Blockers detected.

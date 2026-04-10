@@ -44,17 +44,23 @@
     "/home/andy/Documents/bioreactor/media_pipeline/exports/media/lbproto/lbproto_draft_01/reports/draft_summary.md",
     "/home/andy/Documents/bioreactor/media_pipeline/exports/media/lbproto/lbproto_draft_01/reports/unmapped_components.tsv",
     "/home/andy/Documents/bioreactor/media_pipeline/exports/media/lbproto/lbproto_draft_01/reports/row_lineage.tsv",
+    "/home/andy/Documents/bioreactor/media_pipeline/exports/media/lbproto/lbproto_draft_01/reports/upstream_reference_validation.tsv",
+    "/home/andy/Documents/bioreactor/media_pipeline/exports/media/lbproto/lbproto_draft_01/reports/upstream_reference_validation.md",
+    "/home/andy/Documents/bioreactor/media_pipeline/exports/media/lbproto/lbproto_draft_01/reports/stage_consistency_validation.tsv",
+    "/home/andy/Documents/bioreactor/media_pipeline/exports/media/lbproto/lbproto_draft_01/reports/stage_consistency_validation.md",
     "/home/andy/Documents/bioreactor/media_pipeline/validation/media/lbproto/lbproto_draft_01/validation_report.md"
   ],
   "schema_id": "manifest.medium.v1",
   "source_version": "lbproto_draft_01",
   "state": "draft",
   "status_flags": {
-    "release_blockers_present": false,
+    "missing_upstream_reference_count": 6,
+    "release_blockers_present": true,
+    "stage_consistency_violation_count": 0,
     "unresolved_complex_mixture_count": 0,
     "unresolved_mapping_count": 0,
     "unresolved_viable_transformation_count": 0,
-    "validation_passed": true
+    "validation_passed": false
   },
   "superseded_by": null,
   "supersedes": null,
