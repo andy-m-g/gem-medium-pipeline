@@ -1,0 +1,91 @@
+{
+  "$id": "tsv.bound_assignment",
+  "type": "table",
+  "delimiter": "\t",
+  "required_columns": [
+    "medium_name",
+    "ingredient",
+    "mapped_metabolite",
+    "exchange_reaction",
+    "bound_value",
+    "bound_unit",
+    "formula_type",
+    "source_concentration",
+    "molecular_weight",
+    "biomass_normalization",
+    "time_window",
+    "accessibility_fraction",
+    "depletion_fraction",
+    "evidence_type",
+    "provenance_label",
+    "uncertainty_level",
+    "sensitivity_multipliers",
+    "unresolved_fraction_note",
+    "curator_decision",
+    "citation_source"
+  ],
+  "constraints": {
+    "enum": {
+      "bound_unit": [
+        "mmol gDW^-1 h^-1",
+        "mmol L^-1 inventory",
+        "open",
+        "blocked"
+      ],
+      "formula_type": [
+        "inventory_only",
+        "biomass_time_cap",
+        "depletion_informed_cap",
+        "measured_rate_override",
+        "kinetic_cap",
+        "heuristic_fallback",
+        "unresolved"
+      ],
+      "provenance_label": [
+        "inventory_only",
+        "partial_proxy_inventory",
+        "biomass_time_cap",
+        "depletion_informed_cap",
+        "measured_rate_override",
+        "kinetic_cap",
+        "heuristic_fallback",
+        "blocked_absent",
+        "unresolved_component"
+      ],
+      "uncertainty_level": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "curator_decision": [
+        "open_unbounded_inventory",
+        "set_upper_bound",
+        "set_two_sided_range",
+        "measured_override",
+        "block",
+        "leave_unresolved"
+      ]
+    },
+    "notes": [
+      "This schema is for row-level bound-assignment artifacts derived from the local Undermind bundle in media_pipeline/undermind/bulk_ingredient_adaptation/.",
+      "Core rule: medium inventory is not uptake flux. Inventory-only rows may open availability but do not by themselves justify biomass-normalized rate caps.",
+      "Mapped_metabolite and exchange_reaction may be blank only for unresolved_component rows.",
+      "If curator_decision is not leave_unresolved, exchange_reaction should be non-empty.",
+      "If bound_value is open, bound_unit must be open and curator_decision must be open_unbounded_inventory.",
+      "If bound_value is blocked, bound_unit must be blocked and curator_decision must be block.",
+      "If formula_type is unresolved, bound_value should be blank and provenance_label must be unresolved_component.",
+      "If provenance_label is unresolved_component, curator_decision must be leave_unresolved and unresolved_fraction_note should be non-empty.",
+      "If provenance_label is blocked_absent, curator_decision must be block.",
+      "If formula_type is inventory_only, provenance_label must be inventory_only or partial_proxy_inventory.",
+      "If formula_type is biomass_time_cap, provenance_label must be biomass_time_cap and biomass_normalization plus time_window should be non-empty.",
+      "If formula_type is depletion_informed_cap, provenance_label must be depletion_informed_cap and time_window should be non-empty.",
+      "If formula_type is measured_rate_override, provenance_label must be measured_rate_override and biomass_normalization plus time_window should be non-empty.",
+      "If formula_type is kinetic_cap, provenance_label must be kinetic_cap.",
+      "If formula_type is heuristic_fallback, provenance_label must be heuristic_fallback, uncertainty_level must be low, and evidence_type should include heuristic assumption.",
+      "Evidence_type is a pipe-separated list. Recommended allowed tags from the source bundle are: recipe, direct chemistry, product sheet, endpoint depletion, time-course exometabolomics, fermentation profile, internal experimental measurement, kinetic literature, heuristic assumption.",
+      "Sensitivity_multipliers should be a comma-separated list of positive numeric values and should always include 1.",
+      "Partial rich-medium proxies should carry unresolved_fraction_note explaining the unresolved remainder.",
+      "Release-ready rows should have non-empty medium_name, ingredient, formula_type, provenance_label, curator_decision, citation_source, evidence_type, uncertainty_level, and sensitivity_multipliers."
+    ]
+  }
+}
