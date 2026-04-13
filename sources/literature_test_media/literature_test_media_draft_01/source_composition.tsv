@@ -1,0 +1,6 @@
+source_row_id	source_medium_id	source_name	component_raw	amount_raw	unit_raw	basis	per_volume_value	per_volume_unit	lot_or_vendor	source_ref	page_or_table	comment	curator
+row_ltm_m9s_001	m9_stock_10x	10X M9 SALTS	Na2HPO4	60	g	stock_solution	1	L		validation/media/literature_test_media/M9/MEDIA-M1.pdf|page_1	page 1 stock solutions	10X M9 salts component explicitly stated in PDF	andy
+row_ltm_m9s_002	m9_stock_10x	10X M9 SALTS	KH2PO4	30	g	stock_solution	1	L		validation/media/literature_test_media/M9/MEDIA-M1.pdf|page_1	page 1 stock solutions	10X M9 salts component explicitly stated in PDF	andy
+row_ltm_m9s_003	m9_stock_10x	10X M9 SALTS	NaCl	5	g	stock_solution	1	L		validation/media/literature_test_media/M9/MEDIA-M1.pdf|page_1	page 1 stock solutions	10X M9 salts component explicitly stated in PDF	andy
+row_ltm_m9s_004	m9_stock_10x	10X M9 SALTS	NH4Cl	10	g	stock_solution	1	L		validation/media/literature_test_media/M9/MEDIA-M1.pdf|page_1	page 1 stock solutions	10X M9 salts component explicitly stated in PDF	andy
+row_ltm_m9s_005	m9_stock_10x	10X M9 SALTS	dH2O	to 1	litre	stock_solution	1	L		validation/media/literature_test_media/M9/MEDIA-M1.pdf|page_1	page 1 stock solutions	Fill-to-volume row retained as stated	andy
