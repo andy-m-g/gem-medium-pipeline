@@ -79,6 +79,24 @@ You can override that location with:
 
 - `--upstream-reference-dir /path/to/extracted_snapshot`
 
+The frozen `gapseq_seed_like` snapshot can be refreshed explicitly from
+gapseq's `dat/seed_metabolites_edited.tsv` with:
+
+```bash
+python3 scripts/refresh_gapseq_seed_snapshot.py
+```
+
+By default this imports the local sibling file
+`/home/andy/Documents/bioreactor/data/seed_metabolites_edited.tsv` and updates:
+
+- `media_pipeline/upstream_snapshots/gapseq_seed_like/compounds.tsv`
+- `media_pipeline/upstream_snapshots/gapseq_seed_like/snapshot_manifest.json`
+
+This is a maintenance/import step only. Ordinary pipeline validation continues
+to use frozen local snapshot files and does not fetch live upstream data.
+If you want an explicit live fetch during this maintenance step, pass
+`--source-url <url>` yourself.
+
 ## Canonical outputs
 
 - `final_medium_export.tsv`

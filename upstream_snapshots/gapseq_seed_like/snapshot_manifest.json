@@ -1,12 +1,34 @@
 {
-  "snapshot_id": "gapseq_seed_like_extracted_2026-04-10",
+  "snapshot_id": "gapseq_seed_like_seed_metabolites_edited_2026-04-13",
   "namespace": "gapseq_seed_like",
-  "description": "Minimal extracted local reference set for validating gapseq/SEED-like compound ids used by the MVP examples.",
+  "description": "Frozen local compound reference derived from gapseq seed_metabolites_edited.tsv for snapshot-based validation.",
   "upstream_sources": [
-    "dat/nutrients.tsv"
+    "dat/seed_metabolites_edited.tsv"
   ],
-  "extracted_from": [
-    "pkgs/gapseq_pipeline/tutorial_files/gf_medium.csv",
-    "results/magmap_311118_8gen/fastcore_runs_test/models/top25/AC_D02.xml"
-  ]
+  "source_provenance": {
+    "import_mode": "file",
+    "source_reference": "dat/seed_metabolites_edited.tsv",
+    "source_file": "/home/andy/Documents/bioreactor/data/seed_metabolites_edited.tsv",
+    "source_url": null,
+    "imported_at_utc": "2026-04-13T21:11:24+00:00",
+    "source_sha256": "feedb2f82e4d2a68d900bfc7bb93bb02f2d1e34dc1a3d4e97a09d33c25a0753a",
+    "source_size_bytes": 10161878,
+    "source_row_count": 27744,
+    "gapseq_branch": "main",
+    "gapseq_commit": "68e6e2b81ed06d9f5ccb69b60d8d38730f4c1cd7",
+    "gapseq_remote_origin": "git@cau-git.rz.uni-kiel.de:MSB/pipelines/gapseq_pipeline.git",
+    "gapseq_repo_path": "/home/andy/Documents/bioreactor/pkgs/gapseq_pipeline",
+    "gapseq_upstream_path": "dat/seed_metabolites_edited.tsv",
+    "source_note": "Derived from gapseq dat/seed_metabolites_edited.tsv as an explicit local snapshot refresh. Normal pipeline validation remains local and snapshot-based."
+  },
+  "derived_outputs": {
+    "compounds_tsv": "compounds.tsv",
+    "compound_count": 27744,
+    "columns": [
+      "compound_id",
+      "compound_name",
+      "evidence_source",
+      "evidence_note"
+    ]
+  }
 }
