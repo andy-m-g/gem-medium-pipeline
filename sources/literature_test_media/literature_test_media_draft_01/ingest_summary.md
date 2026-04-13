@@ -14,8 +14,8 @@ Scope and boundaries:
 
 - `source_recipe.tsv` contains directly stated recipe or formulation rows, including explicit stock additions where the PDF presents them that way.
 - `source_composition.tsv` is present only for M9 because the PDF explicitly provides sub-composition for the `10X M9 SALTS` stock beyond the final medium rows.
-- `bound_assignment.tsv` currently contains a first concrete inventory-only bound table for `M9 broth` as the cleanest directly translatable case from this package.
-- `m9_dissociation_mapping.tsv` adds an explicit M9-only companion representation layer from source inventory to model-facing compound members.
+- `bound_assignment.tsv` now includes conservative `M9 broth` and `M9 agar` slices: chemically defined nutrient rows remain inventory-only, while `agar` is kept as an explicit unresolved solidifier row with no exchange assignment.
+- `m9_dissociation_mapping.tsv` adds an explicit M9-only companion representation layer from source inventory to model-facing compound members for both broth and agar nutrient rows.
 - `bound_assignment_dissociated.tsv` keeps the dissociated M9 members at `inventory_only` / `open_unbounded_inventory`; it does not assign biomass-normalized uptake caps.
 - No composition rows were invented for peptones, extracts, digests, infusions, blood, bile salts, agar, or starch.
 - Range and variant issues that do not fit the flat source schema cleanly are called out in the human-facing package under [extraction_notes.md](/home/andy/Documents/bioreactor/media_pipeline/results/media_recipes/extraction_notes.md).
@@ -26,4 +26,5 @@ M9 companion dissociation notes:
 - The dissociation layer is a companion model-facing representation derived from that source inventory, not a replacement for it.
 - Source recipe inventory is not uptake flux, and the dissociated representation is not a flux cap.
 - Phosphate is represented conservatively as a source-term `Phosphate` member contributed by both `Na2HPO4` and `KH2PO4`; no detailed aqueous phosphate-buffer speciation is attempted here.
+- For `M9 agar`, chemically defined nutrient members are treated analogously to `M9 broth`, but `agar` remains an explicit unresolved solidifier / non-nutrient structural component and is not dissociated into GEM nutrients.
 - Members lacking current local upstream snapshot support are intentionally emitted as `local_proxy_or_override` / `local_only_expected` and remain local-only pending a separate upstream-snapshot curation task.
