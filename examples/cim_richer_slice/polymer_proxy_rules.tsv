@@ -1,0 +1,3 @@
+transformation_rule_id	viable_rule_id	output_compound_id	output_compound_name	multiplier	alignment_class	upstream_source	upstream_ref	evidence_note	decision_note
+poly_starch_maltose	via_starch	cpd00179	Maltose	0.5	local_proxy_or_override	dat/nutrients.tsv	cpd00179	starch proxy represented as one maltose-equivalent per two anhydroglucose units	explicit viable polymer proxy
+poly_inulin_maltose	via_inulin	cpd00179	Maltose	0.5	local_proxy_or_override	dat/nutrients.tsv	cpd00179	inulin is forced into the same coarse maltose proxy because the current snapshot lacks fructan-specific viable ids and the compromise is kept explicit here	explicit viable polymer proxy

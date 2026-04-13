@@ -1,0 +1,3 @@
+transformation_rule_id	viable_rule_id	output_compound_id	output_compound_name	multiplier	alignment_class	upstream_source	upstream_ref	evidence_note	decision_note
+salt_nacl_na	via_nacl	cpd00971	Sodium	1	inferred_from_gapseq_convention	dat/nutrients.tsv	cpd00971	nacl yields one sodium-equivalent per mole	explicit viable sodium export member
+salt_nacl_cl	via_nacl	cpd00099	Cl-	1	inferred_from_gapseq_convention	dat/nutrients.tsv	cpd00099	nacl yields one chloride-equivalent per mole	explicit viable chloride export member

@@ -1,0 +1,7 @@
+source_row_id	medium_family	source_version	ingredient_name	quantity	unit	source_ref	supplier	evidence_note	decision_note
+src_001	bhisproto	bhisproto_draft_01	Brain heart infusion broth()	37.0	g/L	S1_BHIS_YanWang.ods		ingested from S1_BHIS_YanWang.ods table Sheet1	
+src_002	bhisproto	bhisproto_draft_01	Yeast extract	5.0	g/L	S1_BHIS_YanWang.ods		ingested from S1_BHIS_YanWang.ods table Sheet1	
+src_003	bhisproto	bhisproto_draft_01	L-Cysteine.HCl	0.5	g/L	S1_BHIS_YanWang.ods		ingested from S1_BHIS_YanWang.ods table Sheet1	
+src_004	bhisproto	bhisproto_draft_01	1 M Resazurin solution	4.0	mL/L	S1_BHIS_YanWang.ods		ingested from S1_BHIS_YanWang.ods table Sheet1	
+src_005	bhisproto	bhisproto_draft_01	Hemin-VK1 Solution ()	10.0	mL/L	S1_BHIS_YanWang.ods		ingested from S1_BHIS_YanWang.ods table Sheet1	
+src_006	bhisproto	bhisproto_draft_01	Distilled water	1.0	fill_to_L	S1_BHIS_YanWang.ods		ingested from S1_BHIS_YanWang.ods table Sheet1	

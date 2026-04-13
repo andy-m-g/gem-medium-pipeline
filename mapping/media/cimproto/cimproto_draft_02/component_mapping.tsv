@@ -1,0 +1,2 @@
+mapping_id	curated_compound_name	target_namespace	target_id	target_name	mapping_status	alignment_class	upstream_source	upstream_ref	evidence_note	decision_note
+map_example	Example Compound	gapseq_seed_like	cpd00000	Example Compound	approved	unclear_needs_more_evidence			

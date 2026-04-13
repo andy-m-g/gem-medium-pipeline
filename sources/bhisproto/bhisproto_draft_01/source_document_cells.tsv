@@ -1,0 +1,13 @@
+table_id	table_name	row_index	column_index	cell_value
+tbl_1	Sheet1	1	1	Brain heart infusion broth()
+tbl_1	Sheet1	1	2	37.0 g
+tbl_1	Sheet1	2	1	Yeast extract
+tbl_1	Sheet1	2	2	5.0 g
+tbl_1	Sheet1	3	1	L-Cysteine.HCl
+tbl_1	Sheet1	3	2	0.5 g
+tbl_1	Sheet1	4	1	1 M Resazurin solution
+tbl_1	Sheet1	4	2	4.0 mL
+tbl_1	Sheet1	5	1	Hemin-VK1 Solution ()
+tbl_1	Sheet1	5	2	10.0 mL
+tbl_1	Sheet1	6	1	Distilled water
+tbl_1	Sheet1	6	2	Fill up to 1.0 L

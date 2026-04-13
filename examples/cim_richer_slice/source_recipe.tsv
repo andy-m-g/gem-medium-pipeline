@@ -1,0 +1,7 @@
+source_row_id	medium_family	source_version	ingredient_name	quantity	unit	source_ref	supplier	evidence_note	decision_note
+src_casein_peptone	cimproto	cim_richer_slice	Casein peptone	5	g/L	cim_richer_slice_sheet	curator	complex nitrogen source retained as explicit source ingredient for richer CIM-inspired slice	
+src_yeast_extract	cimproto	cim_richer_slice	Yeast extract	2.5	g/L	cim_richer_slice_sheet	curator	second complex nitrogen source retained to test duplicate aggregation across ingredients	
+src_nacl	cimproto	cim_richer_slice	NaCl	5	g/L	cim_richer_slice_sheet	curator	explicit salt example for viable split test in richer CIM-like slice	
+src_starch	cimproto	cim_richer_slice	Starch	0.5	g/L	cim_richer_slice_sheet	curator	first polymer proxy case retained as explicit carbohydrate placeholder	
+src_inulin	cimproto	cim_richer_slice	Inulin	0.3	g/L	cim_richer_slice_sheet	curator	second polymer proxy case retained to stress current proxy semantics under limited namespace coverage	
+src_citric	cimproto	cim_richer_slice	Citric acid	0.25	g/L	cim_richer_slice_sheet	curator	explicit chemical-form example retained for richer CIM-like slice	

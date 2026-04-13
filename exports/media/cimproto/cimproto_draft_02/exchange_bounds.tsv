@@ -1,0 +1,7 @@
+compound_id	compound_name	lower_bound	upper_bound	bound_unit
+cpd00035	L-Alanine	-2.806151	1000	mmol/L
+cpd00971	Sodium	-85.557837	1000	mmol/L
+cpd00099	Cl-	-85.557837	1000	mmol/L
+cpd00179	Maltose	-2.467004	1000	mmol/L
+cpd_citrate	Citrate	-1.30127	1000	mmol/L
+cpd00007	O2	-0	1000	mmol/L
