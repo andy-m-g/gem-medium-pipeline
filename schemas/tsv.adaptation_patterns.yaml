@@ -1,0 +1,27 @@
+{
+  "$id": "tsv.adaptation_patterns",
+  "type": "table",
+  "delimiter": "\t",
+  "required_columns": [
+    "pattern_id",
+    "pattern_scope",
+    "pattern_name",
+    "trigger_type",
+    "trigger_detail",
+    "candidate_interpretation",
+    "candidate_response",
+    "boundary_note",
+    "evidence_ref",
+    "confidence",
+    "automation_status",
+    "note"
+  ],
+  "constraints": {
+    "unique": [["pattern_id"]],
+    "enum": {
+      "pattern_scope": ["medium_revision", "mapping_representation", "reconstruction_boundary", "workflow_provenance"],
+      "confidence": ["high", "medium", "low"],
+      "automation_status": ["catalog_only", "proposal_only", "blocked_for_automation"]
+    }
+  }
+}
