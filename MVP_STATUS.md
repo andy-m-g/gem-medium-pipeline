@@ -17,6 +17,12 @@ The MVP currently includes these implemented stages:
 8. `row_lineage`
 9. `validation`
 
+Small implementation extensions now add:
+
+10. `recipe_source_ingestion`
+11. `model_diagnostic_harvest`
+12. `curator_revision_proposal_generation`
+
 The current flat-file inputs are:
 
 - `source_recipe.tsv`
@@ -33,6 +39,18 @@ The current canonical outputs are:
 - `final_medium_export.tsv`
 - `gapseq_medium.csv`
 - `reports/row_lineage.tsv`
+
+New explicit report outputs can include:
+
+- `sources/<family>/<version>/source_document_cells.tsv`
+- `validation/media/<family>/<version>/model_diagnostic_signals.tsv`
+- `validation/media/<family>/<version>/diagnostic_medium_comparison.tsv`
+- `exports/media/<family>/<version>/reports/diagnostic_version_history.tsv`
+- `exports/media/<family>/<version>/reports/curator_revision_proposals.tsv`
+
+Reusable curator pattern capture now also exists in:
+
+- `media_pipeline/decisions/adaptation_patterns.tsv`
 
 ## Current Validation
 
@@ -77,6 +95,10 @@ The following remain out of MVP scope:
 - richer governance or override-policy frameworks
 - heavy release automation beyond the current draft/candidate checks
 - generalized hardening of the internal aggregation helper
+
+The pattern catalog is intentionally not automatic adapt logic. It preserves
+repeatable reasoning for later workflow training while keeping scientific
+judgment explicit.
 
 ## Likely Next Expansion Points
 

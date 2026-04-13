@@ -12,6 +12,11 @@ This is the first real vertical slice of the medium pipeline. It implements only
 8. `row_lineage`
 9. `validation`
 
+Minimal extensions now also support:
+
+10. recipe/source-document flattening into explicit `source_recipe.tsv`
+11. preserved model-diagnostics harvesting into explicit curator-facing proposal tables
+
 The current scaffold still uses a simple `aggregate_compounds` helper internally, but that helper is not being treated as hardened MVP scope yet.
 
 Deferred from the literature-backed MVP/add-on roadmap:
@@ -35,6 +40,34 @@ The prototype reads these explicit flat files:
 - `salt_split_rules.tsv`
 - `polymer_proxy_rules.tsv`
 - `chemical_form_rules.tsv`
+
+Recipe-like `.odt` and `.ods` files can now be flattened into explicit source tables with:
+
+```bash
+python3 scripts/media_pipeline_cli.py media ingest-source \
+  --medium-family bhisproto \
+  --version bhisproto_draft_01 \
+  --source-doc data/dev/diet/bhi/S1_BHIS_YanWang.ods
+```
+
+Preserved model logs can now be harvested conservatively with:
+
+```bash
+python3 scripts/media_pipeline_cli.py media harvest-diagnostics \
+  --medium-family bhisproto \
+  --version bhisproto_draft_01 \
+  --active-medium data/diets/bhi.csv \
+  --log-dir data/models/bhi/logs
+```
+
+This writes explicit staged artifacts rather than taking automatic medium or adapt actions.
+
+Recurring adaptation patterns can now be captured explicitly in:
+
+- [media_pipeline/decisions/adaptation_patterns.tsv](/home/andy/Documents/bioreactor/media_pipeline/decisions/adaptation_patterns.tsv)
+
+This catalog is intended as reusable curator knowledge for future recipe
+training and fixture extraction. It is not an automatic policy layer.
 
 The prototype can also validate upstream-backed ids against a local extracted
 snapshot directory. By default it looks for:

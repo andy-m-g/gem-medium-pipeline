@@ -17,7 +17,7 @@
   "constraints": {
     "unique": [["source_row_id"]],
     "enum": {
-      "unit": ["g/L", "mg/L", "ug/L"]
+      "unit": ["g/L", "mg/L", "ug/L", "mL/L", "fill_to_L"]
     }
   }
 }
