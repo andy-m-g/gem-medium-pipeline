@@ -39,6 +39,7 @@ pipeline.
   - inventory-only rows that keep availability explicit without imposing a cap
   - future capped rows when stronger uptake evidence exists
 - The default conservative rule is that recipe inventory is not uptake flux.
+- A concentration-derived availability bound may be recorded as an explicit optional policy, but it remains distinct from a biomass-normalized uptake-rate cap.
 
 ### 4. Future capped-bound layer
 

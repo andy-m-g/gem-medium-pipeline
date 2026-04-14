@@ -31,6 +31,17 @@ Practical use:
 - treat the template under [bound_assignment.tsv](/home/andy/Documents/bioreactor/media_pipeline/templates/tsv/bound_assignment.tsv) as the canonical starter table
 - validate the header and controlled vocabularies against [tsv.bound_assignment.yaml](/home/andy/Documents/bioreactor/media_pipeline/schemas/tsv.bound_assignment.yaml)
 
+Optional concentration-derived availability policy:
+
+- `concentration_derived_availability_bound` records a numeric bound-like value derived directly from medium concentration for a defined or fully resolved compound.
+- This policy is supported as an optional mode and as a legacy-compatible representation for historical CIM/BHI-style spreadsheet exports.
+- It differs from `inventory_only` because it assigns a numeric model-facing availability value rather than leaving the exchange open.
+- It differs from `biomass_time_cap` because it is not a `mmol gDW^-1 h^-1` uptake-rate estimate and does not use biomass or time normalization.
+- It differs from `heuristic_fallback` because the primary numeric value comes from source concentration or an explicit concentration conversion rather than from a fallback cap chosen mainly by heuristic judgment.
+- This policy requires explicit curator approval, should normally use `bound_unit = mmol L^-1 inventory`, and must not be interpreted as a measured uptake rate.
+- It is not the default policy for source inventory, and it should not be used for unresolved rich-medium remainders.
+- Supporting rationale and terminology notes are recorded in `/home/andy/Documents/bioreactor/media_pipeline/undermind/flux_calculation/Availability_bounds_from_medium_composition_report.pdf`.
+
 Undermind evidence bundle:
 
 - the evidence and planning bundle used for this artifact lives locally under:
@@ -42,6 +53,8 @@ Undermind evidence bundle:
   - `3_Bound_assignment_schema_specification.pdf`
   - `4_Bound_assignment_TSV_template.pdf`
   - `5_Bound_assignment_validator_rule_matrix.pdf`
+- a separate local note on concentration-derived availability encoding also lives under:
+  `/home/andy/Documents/bioreactor/media_pipeline/undermind/flux_calculation/Availability_bounds_from_medium_composition_report.pdf`
 
 Boundary:
 
