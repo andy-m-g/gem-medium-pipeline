@@ -34,12 +34,25 @@ automation.
 - [decisions/medium_layer_contract.md](decisions/medium_layer_contract.md)
 - [decisions/bound_assignment.md](decisions/bound_assignment.md)
 
+## Get Started
+
+Clone the repository, enter the checkout, and run commands from the repository
+root:
+
+```bash
+git clone <your-copy-of-this-repo>
+cd media_pipeline
+```
+
+This repository does not currently ship as an installable Python package. The
+current workflow is to run the checked-in scripts directly from the repository
+root.
+
 ## Quick Start
 
 From the repository root:
 
 ```bash
-cd /home/andy/Documents/bioreactor/media_pipeline
 python3 scripts/media_pipeline_cli.py media init --medium-family lbproto --version lbproto_draft_01
 ```
 
@@ -112,6 +125,7 @@ For the full stage-by-stage walkthrough and additional commands, use
 - Refresh the local upstream snapshot intentionally: use
   `python3 scripts/refresh_gapseq_seed_snapshot.py`
 - Inspect current implementation status: read [MVP_STATUS.md](MVP_STATUS.md)
+- Find the main script entry points under `scripts/`
 
 ## Notes
 
@@ -119,6 +133,8 @@ For the full stage-by-stage walkthrough and additional commands, use
 - `gapseq_medium.csv` is a downstream compatibility export
 - `undermind/` is intentionally local support material, not ordinary pipeline
   input
+- most commands assume you are running from the repository root and using
+  repo-relative paths
 
 For the full prototype walkthrough, CLI usage, and current fixture details, use
 [README_prototype.md](README_prototype.md).
