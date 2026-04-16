@@ -28,6 +28,10 @@ Deferred from the literature-backed MVP/add-on roadmap:
 - heavy governance / richer provenance packaging
 - full release-state automation
 
+Run the commands below from the repository root. This repo is operated from the
+checked-out source tree; it is not currently packaged as an installable Python
+distribution.
+
 ## Input tables
 
 The prototype reads these explicit flat files:
@@ -47,7 +51,7 @@ Recipe-like `.odt` and `.ods` files can now be flattened into explicit source ta
 python3 scripts/media_pipeline_cli.py media ingest-source \
   --medium-family bhisproto \
   --version bhisproto_draft_01 \
-  --source-doc data/dev/diet/bhi/S1_BHIS_YanWang.ods
+  --source-doc /path/to/source_document.ods
 ```
 
 Preserved model logs can now be harvested conservatively with:
@@ -56,15 +60,15 @@ Preserved model logs can now be harvested conservatively with:
 python3 scripts/media_pipeline_cli.py media harvest-diagnostics \
   --medium-family bhisproto \
   --version bhisproto_draft_01 \
-  --active-medium data/diets/bhi.csv \
-  --log-dir data/models/bhi/logs
+  --active-medium /path/to/active_medium.csv \
+  --log-dir /path/to/model_logs
 ```
 
 This writes explicit staged artifacts rather than taking automatic medium or adapt actions.
 
 Recurring adaptation patterns can now be captured explicitly in:
 
-- [media_pipeline/decisions/adaptation_patterns.tsv](/home/andy/Documents/bioreactor/media_pipeline/decisions/adaptation_patterns.tsv)
+- [decisions/adaptation_patterns.tsv](decisions/adaptation_patterns.tsv)
 
 This catalog is intended as reusable curator knowledge for future recipe
 training and fixture extraction. It is not an automatic policy layer.
@@ -72,8 +76,8 @@ training and fixture extraction. It is not an automatic policy layer.
 The prototype can also validate upstream-backed ids against a local extracted
 snapshot directory. By default it looks for:
 
-- `media_pipeline/upstream_snapshots/<namespace_snapshot>/snapshot_manifest.json`
-- `media_pipeline/upstream_snapshots/<namespace_snapshot>/compounds.tsv`
+- `upstream_snapshots/<namespace_snapshot>/snapshot_manifest.json`
+- `upstream_snapshots/<namespace_snapshot>/compounds.tsv`
 
 You can override that location with:
 
@@ -86,11 +90,11 @@ gapseq's `dat/seed_metabolites_edited.tsv` with:
 python3 scripts/refresh_gapseq_seed_snapshot.py
 ```
 
-By default this imports the local sibling file
-`/home/andy/Documents/bioreactor/data/seed_metabolites_edited.tsv` and updates:
+By default this imports the local sibling file `../data/seed_metabolites_edited.tsv`
+when present and updates:
 
-- `media_pipeline/upstream_snapshots/gapseq_seed_like/compounds.tsv`
-- `media_pipeline/upstream_snapshots/gapseq_seed_like/snapshot_manifest.json`
+- `upstream_snapshots/gapseq_seed_like/compounds.tsv`
+- `upstream_snapshots/gapseq_seed_like/snapshot_manifest.json`
 
 This is a maintenance/import step only. Ordinary pipeline validation continues
 to use frozen local snapshot files and does not fetch live upstream data.
@@ -113,14 +117,14 @@ The MVP-specific intermediate that now sits between mapping and final export is:
 
 The reduced earlier-workbook example lives in:
 
-- `media_pipeline/examples/earlier_workbook_slice/source_recipe.tsv`
-- `media_pipeline/examples/earlier_workbook_slice/ingredient_component_composition.tsv`
-- `media_pipeline/examples/earlier_workbook_slice/curation_decisions.tsv`
-- `media_pipeline/examples/earlier_workbook_slice/component_mapping.tsv`
-- `media_pipeline/examples/earlier_workbook_slice/viable_compound_rules.tsv`
-- `media_pipeline/examples/earlier_workbook_slice/salt_split_rules.tsv`
-- `media_pipeline/examples/earlier_workbook_slice/polymer_proxy_rules.tsv`
-- `media_pipeline/examples/earlier_workbook_slice/chemical_form_rules.tsv`
+- `examples/earlier_workbook_slice/source_recipe.tsv`
+- `examples/earlier_workbook_slice/ingredient_component_composition.tsv`
+- `examples/earlier_workbook_slice/curation_decisions.tsv`
+- `examples/earlier_workbook_slice/component_mapping.tsv`
+- `examples/earlier_workbook_slice/viable_compound_rules.tsv`
+- `examples/earlier_workbook_slice/salt_split_rules.tsv`
+- `examples/earlier_workbook_slice/polymer_proxy_rules.tsv`
+- `examples/earlier_workbook_slice/chemical_form_rules.tsv`
 
 It demonstrates:
 
@@ -131,7 +135,7 @@ It demonstrates:
 
 A second stress-test fixture lives in:
 
-- `media_pipeline/examples/cim_inspired_slice/`
+- `examples/cim_inspired_slice/`
 
 It exercises the same MVP stages with a small CIM-inspired slice and includes:
 
@@ -155,21 +159,21 @@ Build the prototype slice from the worked example:
 python3 scripts/media_pipeline_cli.py media draft-create \
   --medium-family lbproto \
   --version lbproto_draft_01 \
-  --source-recipe media_pipeline/examples/earlier_workbook_slice/source_recipe.tsv \
-  --decomposition-table media_pipeline/examples/earlier_workbook_slice/ingredient_component_composition.tsv \
-  --curation-table media_pipeline/examples/earlier_workbook_slice/curation_decisions.tsv \
-  --mapping-table media_pipeline/examples/earlier_workbook_slice/component_mapping.tsv \
-  --viable-rules-table media_pipeline/examples/earlier_workbook_slice/viable_compound_rules.tsv \
-  --salt-split-rules-table media_pipeline/examples/earlier_workbook_slice/salt_split_rules.tsv \
-  --polymer-proxy-rules-table media_pipeline/examples/earlier_workbook_slice/polymer_proxy_rules.tsv \
-  --chemical-form-rules-table media_pipeline/examples/earlier_workbook_slice/chemical_form_rules.tsv \
+  --source-recipe examples/earlier_workbook_slice/source_recipe.tsv \
+  --decomposition-table examples/earlier_workbook_slice/ingredient_component_composition.tsv \
+  --curation-table examples/earlier_workbook_slice/curation_decisions.tsv \
+  --mapping-table examples/earlier_workbook_slice/component_mapping.tsv \
+  --viable-rules-table examples/earlier_workbook_slice/viable_compound_rules.tsv \
+  --salt-split-rules-table examples/earlier_workbook_slice/salt_split_rules.tsv \
+  --polymer-proxy-rules-table examples/earlier_workbook_slice/polymer_proxy_rules.tsv \
+  --chemical-form-rules-table examples/earlier_workbook_slice/chemical_form_rules.tsv \
   --namespace-snapshot gapseq_seed_like
 ```
 
 The same command now also writes:
 
-- `media_pipeline/exports/media/<family>/<version>/reports/upstream_reference_validation.tsv`
-- `media_pipeline/exports/media/<family>/<version>/reports/upstream_reference_validation.md`
+- `exports/media/<family>/<version>/reports/upstream_reference_validation.tsv`
+- `exports/media/<family>/<version>/reports/upstream_reference_validation.md`
 
 These classify checks as:
 
@@ -180,10 +184,10 @@ These classify checks as:
 Inspect outputs:
 
 ```bash
-sed -n '1,40p' media_pipeline/intermediate/lbproto/lbproto_draft_01/viable_compounds.tsv
-sed -n '1,40p' media_pipeline/exports/media/lbproto/lbproto_draft_01/final_medium_export.tsv
-sed -n '1,40p' media_pipeline/exports/media/lbproto/lbproto_draft_01/gapseq_medium.csv
-sed -n '1,40p' media_pipeline/exports/media/lbproto/lbproto_draft_01/reports/row_lineage.tsv
+sed -n '1,40p' intermediate/lbproto/lbproto_draft_01/viable_compounds.tsv
+sed -n '1,40p' exports/media/lbproto/lbproto_draft_01/final_medium_export.tsv
+sed -n '1,40p' exports/media/lbproto/lbproto_draft_01/gapseq_medium.csv
+sed -n '1,40p' exports/media/lbproto/lbproto_draft_01/reports/row_lineage.tsv
 ```
 
 Optional sanity checks:
