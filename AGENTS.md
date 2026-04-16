@@ -37,6 +37,10 @@ This repository contains an MVP medium-construction pipeline for GEM workflows.
 - Keep scientific judgment in tables and notes, not in hidden code paths.
 - Avoid committing bulky generated artifacts unless they are intentional reference fixtures.
 
+## Internal Skills
+- Repo behavior is also guided by the internal `skills/` documents.
+- Current skill areas cover medium layers, bound assignment, rich ingredients, and upstream snapshot validation.
+
 ## Repo Hygiene
 - `undermind/` is intentionally ignored and should not be reintroduced into version control.
 - Do not commit caches, logs, bulk validation outputs, or temporary artifacts unless explicitly asked.
