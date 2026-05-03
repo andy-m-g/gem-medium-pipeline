@@ -1,0 +1,27 @@
+schema_id: m9_direct_transcription_manifest.v1
+object_type: direct_transcription_baseline
+baseline_id: m9_direct_transcription
+created_at: 2026-05-03T17:30:52+00:00
+scope: M9 broth only
+notes:
+  - Conservative direct-transcription baseline.
+  - Explicit stock-member flattening is allowed when source_composition.tsv states the stock members directly.
+  - No salt dissociation, proxy enrichment, viable export transformation, or concentration-derived availability bounds are applied.
+inputs:
+  - path: /home/andy/Documents/bioreactor/media_pipeline/sources/literature_test_media/literature_test_media_draft_01/source_recipe.tsv
+    sha256: 81ca317fce6c56a3025a6b3801456f9e6fc7280c0897ab8386e2b345638e8221
+  - path: /home/andy/Documents/bioreactor/media_pipeline/sources/literature_test_media/literature_test_media_draft_01/source_composition.tsv
+    sha256: f3dc18bdb0b47091a4da1cb10bfb1f898b7057e0b76f04e80ca49e670e55a0a0
+  - path: /home/andy/Documents/bioreactor/media_pipeline/upstream_snapshots/gapseq_seed_like/compounds.tsv
+    sha256: 269ac534b970861294d96804e0697c84243a3fdca648cdf5d7b2222c502d4e65
+outputs:
+  - /home/andy/Documents/bioreactor/media_pipeline/exports/baselines/m9_direct_transcription/m9_direct_transcription.tsv
+  - /home/andy/Documents/bioreactor/media_pipeline/exports/baselines/m9_direct_transcription/m9_direct_transcription.csv
+  - /home/andy/Documents/bioreactor/media_pipeline/exports/baselines/m9_direct_transcription/reports/direct_transcription_mapping_validation.tsv
+  - /home/andy/Documents/bioreactor/media_pipeline/exports/baselines/m9_direct_transcription/reports/direct_transcription_summary.md
+counts:
+  baseline_rows: 7
+  flattened_stock_rows: 4
+  retained_named_source_rows: 3
+  upstream_backed_rows: 1
+  local_only_expected_rows: 6
